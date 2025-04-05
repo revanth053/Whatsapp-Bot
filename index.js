@@ -3,6 +3,9 @@ const { makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whis
 const qrcode = require('qrcode-terminal');
 const dotenv = require('dotenv');
 const OpenAI = require('openai');
+require('dotenv').config();
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
 
 dotenv.config();
 
